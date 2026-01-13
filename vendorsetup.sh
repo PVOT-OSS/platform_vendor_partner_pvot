@@ -66,6 +66,11 @@ fetch_fdroid() {
 
     mkdir -p "$(dirname "$dest")"
 
+    if [ -f "$dest" ]; then
+        log "$dest exists; skipping download"
+        return 0
+    fi
+
     local tmp_apk
     tmp_apk=$(mktemp)
 
