@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2026 Saalim Quadri <danascape@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+version = 1
+SPDX-PackageName = "partner_pvot"
+SPDX-PackageSupplier = "Saalim Quadri"
+SPDX-PackageDownloadLocation = "https://github.com/PVOT-OSS/platform_vendor_partner_pvot"
+
+[[annotations]]
+path = [
+    ".gitignore",
+    "**/*.md",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Saalim Quadri <danascape@gmail.com>"
+SPDX-License-Identifier = "Apache-2.0"
