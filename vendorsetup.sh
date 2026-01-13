@@ -14,7 +14,7 @@ log() {
     printf "[%s] %s\n" "$(date +%H:%M:%S)" "$*" >&2
 }
 
-fetch_apk() {
+fetch_github() {
     local repo_url="$1"
     local tag="$2"
     local asset="$3"
@@ -60,20 +60,49 @@ fetch_apk() {
     log "stored at $dest"
 }
 
+fetch_fdroid() {
+    local apk_url="$1"
+    local dest="$2"
+
+    mkdir -p "$(dirname "$dest")"
+
+    local tmp_apk
+    tmp_apk=$(mktemp)
+
+    log "downloading $apk_url"
+    curl -L --fail --retry 3 -o "$tmp_apk" "$apk_url"
+
+    mv "$tmp_apk" "$dest"
+    log "stored apk at $dest"
+}
+
 RELEASE_FILE="$BASE_DIR/.pvot_release"
 
 while IFS= read -r line; do
     [ -z "$line" ] && continue
     [[ "$line" == \#* ]] && continue
 
-    repo_url=$(echo "$line" | awk '{print $1}')
-    tag=$(echo "$line" | awk '{print $2}')
-    asset=$(echo "$line" | awk '{print $3}')
-    sha=$(echo "$line" | awk '{print $4}')
-    dest=$(echo "$line" | awk '{print $5}')
+    type=$(echo "$line" | awk '{print $1}')
 
-    dest="$BASE_DIR/${dest#./}"
+    if [ "$type" = "gh" ]; then
+        repo_url=$(echo "$line" | awk '{print $2}')
+        tag=$(echo "$line" | awk '{print $3}')
+        asset=$(echo "$line" | awk '{print $4}')
+        sha=$(echo "$line" | awk '{print $5}')
+        dest=$(echo "$line" | awk '{print $6}')
+        dest="$BASE_DIR/${dest#./}"
 
-    fetch_apk "$repo_url" "$tag" "$asset" "$sha" "$dest"
+        fetch_github "$repo_url" "$tag" "$asset" "$sha" "$dest"
+    elif [ "$type" = "fdroid" ]; then
+        apk_url=$(echo "$line" | awk '{print $2}')
+        dest=$(echo "$line" | awk '{print $3}')
+        dest="$BASE_DIR/${dest#./}"
+        fetch_fdroid "$apk_url" "$dest"
+
+
+    else
+        log "unknown type '$type' in manifest"
+        #exit 1
+    fi
 
 done < "$RELEASE_FILE"
