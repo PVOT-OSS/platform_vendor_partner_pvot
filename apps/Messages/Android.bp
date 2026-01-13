@@ -1,0 +1,16 @@
+//
+// Copyright 2026 Saalim Quadri
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// https://github.com/PVOT-OSS/Messages/releases
+android_app_import {
+    name: "Messages",
+    certificate: "platform",
+    product_specific: true,
+    privileged: true,
+    overrides: [
+        "messaging",
+    ],
+    apk: "Messages-v1.0.6-release.apk",
+}

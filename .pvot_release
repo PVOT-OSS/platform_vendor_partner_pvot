@@ -1,0 +1,2 @@
+# repo_url tag asset sha256 dest
+https://github.com/PVOT-OSS/Messages v1.0.6 Messages-v1.0.6-release.apk sha256:a9efcd397357cf9fca4569a51143da2b4a583899e39813cbc122c5a2d2c91b3f ./apps/Messages/Messages-v1.0.6-release.apk
