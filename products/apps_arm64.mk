@@ -7,6 +7,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/partner_pvot/apps \
     vendor/partner_pvot/apps_src
 
+# Common Configuration
+PRODUCT_PACKAGES += \
+    privapp_permissions_pvot_product
+
 # Messaging
 PRODUCT_PACKAGES += \
     Messages

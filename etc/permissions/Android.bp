@@ -1,0 +1,7 @@
+prebuilt_etc {
+    name: "privapp_permissions_pvot_product",
+    product_specific: true,
+    src: "privapp-permissions-pvot-product.xml",
+    sub_dir: "permissions",
+    filename_from_src: true,
+}
