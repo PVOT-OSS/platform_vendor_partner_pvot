@@ -1,0 +1,17 @@
+//
+// SPDX-FileCopyrightText: 2026 Saalim Quadri <danascape@gmail.com>
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// https://github.com/PVOT-OSS/PvotCalculator/releases
+android_app_import {
+    name: "PvotCompass",
+    certificate: "platform",
+    product_specific: true,
+    optional_uses_libs: [
+        "org.apache.http.legacy",
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+    apk: "PvotCompass-v1.0.0-release-fdroid.apk",
+}
