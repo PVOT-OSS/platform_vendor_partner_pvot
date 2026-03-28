@@ -5,5 +5,8 @@
 
 # repo_url tag asset sha256 dest
 
+# Calculator
+gh https://github.com/PVOT-OSS/PvotCalculator v1.0.0 PvotCalculator-v1.0.0-release.apk sha256:dd9a29c2ff4876872d94eafbcaf8e45fab58627d997f14a09ecf01c3e72421e6 ./apps/PvotCalculator/PvotCalculator-v1.0.0-release.apk
+
 # Messaging
 gh https://github.com/PVOT-OSS/Messages v1.0.7 Messages-v1.0.7-release.apk sha256:cdc4224da333f4b768dc28b4745856958fbd99633e44297c08673230cec5f87b ./apps/Messages/Messages-v1.0.7-release.apk
