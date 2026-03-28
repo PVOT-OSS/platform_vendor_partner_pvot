@@ -11,6 +11,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     privapp_permissions_pvot_product
 
+# Compass
+PRODUCT_PACKAGES += \
+    PvotCompass
+
 # Messaging
 PRODUCT_PACKAGES += \
     Messages
