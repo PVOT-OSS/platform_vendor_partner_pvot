@@ -11,6 +11,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     privapp_permissions_pvot_product
 
+# Calculator
+PRODUCT_PACKAGES += \
+    PvotCalculator
+
 # Compass
 PRODUCT_PACKAGES += \
     PvotCompass
