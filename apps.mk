@@ -9,3 +9,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit arm64 apps-only :/
 $(call inherit-product, vendor/partner_pvot/products/apps_arm64.mk)
+
+# Inherit SEPolicy
+$(call inherit-product, vendor/partner_pvot/sepolicy/sepolicy-pvot.mk)
