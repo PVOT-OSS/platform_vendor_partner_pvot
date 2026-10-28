@@ -1,0 +1,3 @@
+# allow platform_app to create named pipes (used for realm support)
+allow platform_app fuse:fifo_file create;
+allow platform_app app_data_file:fifo_file create_file_perms;
