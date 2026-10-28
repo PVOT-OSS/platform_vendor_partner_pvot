@@ -19,6 +19,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PvotCompass
 
-# Messaging
+# Messages
 PRODUCT_PACKAGES += \
-    Messages
+    PvotMessages
