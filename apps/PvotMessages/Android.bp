@@ -12,5 +12,5 @@ android_app_import {
     overrides: [
         "messaging",
     ],
-    apk: "Messages-v1.0.7-release.apk",
+    apk: "Messages-v1.0.10-release.apk",
 }
