@@ -12,4 +12,4 @@ gh https://github.com/PVOT-OSS/PvotCalculator v1.0.0 PvotCalculator-v1.0.0-relea
 gh https://github.com/PVOT-OSS/PvotCompass v1.0.0 PvotCompass-v1.0.0-release-fdroid.apk sha256:3dc699d423a82b30cecd532f2f1d0d5947eb5939d567de4b3a6ff6e83ebf7bab ./apps/PvotCompass/PvotCompass-v1.0.0-release-fdroid.apk
 
 # Messages
-gh https://github.com/PVOT-OSS/Messages v1.0.10 Messages-v1.0.10-release.apk sha256:sha256:73c6a968e8b59260019b799b229e604aafa9a47ad6c0bfaf2c3aace878ccf6fc ./apps/PvotMessages/Messages-v1.0.10-release.apk
+gh https://github.com/PVOT-OSS/Messages v1.0.10 Messages-v1.0.10-release.apk sha256:73c6a968e8b59260019b799b229e604aafa9a47ad6c0bfaf2c3aace878ccf6fc ./apps/PvotMessages/Messages-v1.0.10-release.apk
