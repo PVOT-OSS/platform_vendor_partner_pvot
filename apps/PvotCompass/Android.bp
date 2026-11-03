@@ -7,6 +7,7 @@
 android_app_import {
     name: "PvotCompass",
     presigned: true,
+    preprocessed: true,
     product_specific: true,
     apk: "PvotCompass-v1.0.0-release-fdroid.apk",
 }
