@@ -11,6 +11,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     privapp_permissions_pvot_product
 
+# Common Overlays
+PRODUCT_PACKAGES += \
+    PvotConfigOverlayComms
+
 # Calculator
 PRODUCT_PACKAGES += \
     PvotCalculator
