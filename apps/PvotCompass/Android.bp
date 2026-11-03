@@ -6,7 +6,7 @@
 // https://github.com/PVOT-OSS/PvotCalculator/releases
 android_app_import {
     name: "PvotCompass",
-    certificate: "platform",
+    presigned: true,
     product_specific: true,
     optional_uses_libs: [
         "org.apache.http.legacy",
