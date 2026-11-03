@@ -11,10 +11,5 @@ android_app_import {
     overrides: [
         "ExactCalculator",
     ],
-    optional_uses_libs: [
-        "org.apache.http.legacy",
-        "androidx.window.extensions",
-        "androidx.window.sidecar",
-    ],
     apk: "PvotCalculator-v1.0.0-release.apk",
 }
