@@ -1,0 +1,2 @@
+# allow priv_app to create named pipes (used for realm support)
+allow { priv_app priv_app_36 } privapp_data_file:fifo_file create_file_perms;
