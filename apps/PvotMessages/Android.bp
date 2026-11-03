@@ -6,7 +6,7 @@
 // https://github.com/PVOT-OSS/Messages/releases
 android_app_import {
     name: "PvotMessages",
-    certificate: "platform",
+    presigned: true,
     product_specific: true,
     privileged: true,
     overrides: [
