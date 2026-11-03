@@ -6,7 +6,7 @@
 // https://github.com/PVOT-OSS/PvotCalculator/releases
 android_app_import {
     name: "PvotCalculator",
-    certificate: "platform",
+    presigned: true,
     product_specific: true,
     overrides: [
         "ExactCalculator",
